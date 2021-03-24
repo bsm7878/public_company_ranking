@@ -1,0 +1,117 @@
+@import '../styles/common.scss';
+
+.header{
+    -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+    height: 55px;
+    line-height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+.content{
+    background-color: white;
+
+    // 제목
+    .title-section{
+        text-align: center;
+        padding-top: 140px;
+        padding-bottom: 30px;
+        h1{
+            font-size: 40px;
+            color: $main-color;
+            font-weight: 700;
+        }
+    }
+    
+    // 기업 검색 search-button
+    .search-section{
+        padding-bottom: 140px;
+        .search-icon{
+            height: 100%;
+            float: left;
+            font-size: 30px;
+        }
+        .search-button{
+            float: left;
+            width: 90%;
+            font-size: 18px;
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-color: $main-color;
+        }
+    }
+}
+
+.intro{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f7f7f7;
+    
+    .intro-title-section{
+        text-align: center;
+        padding-bottom: 60px;
+        h2{
+            font-size: 23px;
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+        p{
+            font-size: 15px;
+            color: #6c757d;
+        }
+    }
+
+    .intro-detail-section{
+        text-align: center;
+        img{
+            width: 160px;
+            height: 160px;
+        }
+        h3{
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        p{
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 20px;
+            span{
+                font-weight: bold;    
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    .footer-section{
+        font-size: 100px;
+        text-align: right;
+        p:first-child{
+            margin-bottom: 0px;
+            color: #c6c6c6;
+            font-size: 10px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+        p:last-child{
+            margin-bottom: 0px;
+            color: #444;
+            font-size: 8px;
+            font-weight: 700;
+        }
+    }
+}
