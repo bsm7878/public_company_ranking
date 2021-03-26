@@ -7,8 +7,8 @@ import RankPage from './pages/RankPage';
 const App = () => {
   return (
     <Switch>
-      <Route path='/rank' component={RankPage}/>
-      <Route path='/' component={IndexPage} />
+      <Route exact path='/rank' component={RankPage}/>
+      <Route exact path='/' component={IndexPage} />
     </Switch>
     
   );

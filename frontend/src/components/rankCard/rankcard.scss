@@ -1,0 +1,42 @@
+.rank-top{
+    text-align: center;
+    h4{
+        font-size: 17px;
+        color: rgb(68, 68, 68);
+    }
+    h5{
+        line-height: 100%;
+        font-size: 55px;
+        margin-bottom: 0px;
+        span:first-child{
+            font-weight: 700;
+            color: #5383E8;
+        }
+        span:last-child{
+            font-size: 20px;
+            font-weight: 700;
+            margin-left: 5px;
+        }
+    }
+    .rank-percent{
+        font-size: 17px;
+        color: #a4a6ad;
+    }
+    .rank-money{
+        font-size: 32px;
+        font-weight: 800;
+        span{
+            font-weight: normal;
+            font-size: 17px;
+        }
+    }
+}
+
+.rank-bottom{
+    .ant-col:first-child{
+        text-align: left;
+    }
+    .ant-col:last-child{
+        text-align: right;
+    }
+}

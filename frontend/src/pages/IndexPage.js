@@ -1,5 +1,5 @@
 import React from 'react';
-import './hi.scss';
+import AppLayOut from '../components/layout/AppLayOut';
 import { FcSearch } from "react-icons/fc";
 import Message from '../images/message.png';
 import profits from '../images/profits.png';
@@ -12,15 +12,12 @@ import { Select } from 'antd';
 
 const IndexPage = () => {
 
-    const { Header, Footer, Content } = Layout;
+    const { Content } = Layout;
     const { Option } = Select;
 
 
     return (
-        <>
-        <Layout>
-            <Header className='header'>Header</Header>
-            
+        <AppLayOut>
             <Content className='content'>
                 <Row className='title-section'>
                     <Col span={24}>
@@ -92,17 +89,7 @@ const IndexPage = () => {
                     </Col>
                 </Row>
             </Content>
-
-            <Footer className='footer'>
-                <Row className='footer-section'>
-                    <Col span={24}>
-                        <p>위 사이트는 공공기관 경영정보 공개시스템 '알리오'에 공시된 자료를 기반으로 만들어졌습니다.</p>
-                        <p>© Octopus</p>
-                    </Col>
-                </Row>
-            </Footer>
-        </Layout>
-        </>
+        </AppLayOut>
     );
 };
 
